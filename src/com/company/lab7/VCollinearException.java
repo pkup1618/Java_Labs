@@ -1,10 +1,10 @@
-package com.company;
+package com.company.lab7;
 
 public class VCollinearException extends Exception
 {
 
     public VCollinearException()
     {
-        super("Векторы коллинеарны");
+        super("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
     }
 }
