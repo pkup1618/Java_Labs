@@ -1,4 +1,4 @@
-package com.company;
+package com.company.lab7;
 
 import java.util.Arrays;
 
@@ -21,7 +21,7 @@ public class Triangle extends Figure implements IShape
         b = new Vector2D(bx, by);
         c = new Vector2D(cx, cy);
 
-        // Проверки точек
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
         Vector2D A = new Vector2D(b.sub(a).getComponent(0), b.sub(a).getComponent(1)); // ab
         Vector2D B = new Vector2D(c.sub(a).getComponent(0), c.sub(a).getComponent(1)); // ac
@@ -31,7 +31,7 @@ public class Triangle extends Figure implements IShape
         {
             if (A.pCollin(B) || B.pCollin(C) || C.pCollin(A))
             {
-                throw new Exception("Неправильные точки треугольника");
+                throw new Exception("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
             }
         }
         catch (Exception e)
@@ -67,14 +67,14 @@ public class Triangle extends Figure implements IShape
 
         A = agesLengths[0];
         B = agesLengths[1];
-        C = agesLengths[2]; // C - самая большая сторона
+        C = agesLengths[2]; // C - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
         if (A == B && B == C) {
-            System.out.println("Равносторонний треугольник");
+            System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         }
         else if (A == B || B == C || C == A)
         {
-            System.out.println("Равнобедренный треугольник");
+            System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         }
 
         else
@@ -82,15 +82,15 @@ public class Triangle extends Figure implements IShape
             double sumCathetsSquares = Math.pow(A, 2) + Math.pow(B, 2);
             if (Math.pow(C, 2) > sumCathetsSquares)
             {
-                System.out.println("Тупоугольный треугольник");
+                System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
             }
             else if (Math.pow(C, 2) == sumCathetsSquares)
             {
-                System.out.println("Прямоугольный треугольник");
+                System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
             }
             else if (Math.pow(C, 2) < sumCathetsSquares)
             {
-                System.out.println("Остроугольниый треугольник");
+                System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
             }
         }
     }
